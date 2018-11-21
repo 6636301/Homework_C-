@@ -10,6 +10,33 @@ namespace _9._2
     {
         static void Main(string[] args)
         {
+            Console.Write("Enter number of array: ");
+            int l = Convert.ToInt32(Console.ReadLine());
+            int res = 0;
+
+            int[] Mass = new int[l];
+            Random rand = new Random();
+            for (int i = 0; i < Mass.Length; i++)
+            {
+                Mass[i] = rand.Next(100);
+                Console.WriteLine(Mass[i]);
+            }
+
+            for (int i = 0; i < Mass.Length; i++)
+            {
+
+                if (Mass[i] > res)
+                {
+                    res = Mass[i];
+                }
+
+
+
+            }
+            Console.WriteLine();
+            Console.WriteLine(res);
+            Console.ReadKey();
+
         }
     }
 }

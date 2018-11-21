@@ -33,7 +33,11 @@ namespace _9._2
 
             Console.ReadKey();
 
+<<<<<<< HEAD
             //Master
+=======
+            //branch_test2
+>>>>>>> branch_test
         }
     }
 }

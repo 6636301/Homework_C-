@@ -12,9 +12,7 @@ namespace _9._2
         {
             Console.Write("Enter number of array: ");
             int l = Convert.ToInt32(Console.ReadLine());
-            double sum = 0;
-           int counter = 0;
-            double Avg = 0;
+                    
 
             int[] Mass = new int[l];
             Random rand = new Random();
@@ -23,20 +21,16 @@ namespace _9._2
                 Mass[i] = rand.Next(100);
                 Console.WriteLine(Mass[i]);
             }
-
+            Console.WriteLine();
          
             for (int i = 0; i < Mass.Length; i++)
             {
-
-                sum += Mass[i];
-                counter++;
+                if (Mass[i] % 2 != 0)
+                {
+                    Console.Write(Mass[i] + " ");
+                }
             }
-
-            Avg = sum / counter;
-
-            Console.WriteLine();
-            Console.WriteLine(Avg);
-          
+             
             Console.ReadKey();
 
         }

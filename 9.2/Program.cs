@@ -23,6 +23,7 @@ namespace _9._2
             }
             Console.WriteLine();
 
+            //for not even values
             for (int i = 0; i < Mass.Length; i++)
             {
                 if (Mass[i] % 2 != 0)
@@ -32,12 +33,21 @@ namespace _9._2
             }
 
             Console.ReadKey();
+            Mass[3] = 44;
 
-<<<<<<< HEAD
-            //Master
-=======
-            //branch_test2
->>>>>>> branch_test
+            //for even values
+            for (int i = 0; i < Mass.Length; i++)
+            {
+                if (Mass[i] % 2 == 0)
+                {
+                    Console.Write(Mass[i] + " ");
+                }
+            }
+
+          
+
+            Console.ReadKey();
+
         }
     }
 }

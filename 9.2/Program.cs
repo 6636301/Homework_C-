@@ -8,9 +8,37 @@ namespace _9._2
 {
     class Program
     {
+
+        static void MyReverse(int[] Array)
+        {
+
+            int L = Array.Length -1;
+            int f = 0;
+            for (int i = 0; i < Array.Length; i++)
+            {
+
+                if (L >= Array.Length/2)
+                {
+                    f = Array[L];
+                    Array[L] = Array[i];
+                    Array[i] = f;
+                    L--;
+                    Console.Write(Array[i] + " ");
+                }
+                else
+                {
+                    Console.Write(Array[i] + " ");
+                }
+
+            }
+                      
+        }
+
+
+
         static void Main(string[] args)
         {
-            Console.Write("Enter number of array: ");
+           Console.Write("Enter number of array: ");
             int l = Convert.ToInt32(Console.ReadLine());
 
 
@@ -18,26 +46,16 @@ namespace _9._2
             Random rand = new Random();
             for (int i = 0; i < Mass.Length; i++)
             {
-                Mass[i] = rand.Next(100);
-                Console.WriteLine(Mass[i]);
+               Mass[i] = rand.Next(100);
+                Console.Write(Mass[i] + " ");
             }
             Console.WriteLine();
 
-            for (int i = 0; i < Mass.Length; i++)
-            {
-                if (Mass[i] % 2 != 0)
-                {
-                    Console.Write(Mass[i] + " ");
-                }
-            }
+
+            MyReverse(Mass);
 
             Console.ReadKey();
 
-<<<<<<< HEAD
-            //Master
-=======
-            //branch_test2
->>>>>>> branch_test
         }
     }
 }

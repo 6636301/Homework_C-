@@ -32,8 +32,8 @@ namespace _9._2
                 }
             }
 
-            Console.ReadKey();
-            Mass[3] = 44;
+            Console.WriteLine();
+
 
             //for even values
             for (int i = 0; i < Mass.Length; i++)

@@ -12,8 +12,7 @@ namespace _9._2
         {
             Console.Write("Enter number of array: ");
             int l = Convert.ToInt32(Console.ReadLine());
-            int res = 0;
-
+     
             int[] Mass = new int[l];
             Random rand = new Random();
             for (int i = 0; i < Mass.Length; i++)
@@ -22,19 +21,18 @@ namespace _9._2
                 Console.WriteLine(Mass[i]);
             }
 
+         
             for (int i = 0; i < Mass.Length; i++)
             {
 
-                if (Mass[i] > res)
+                if (Mass[0] > Mass[i])
                 {
-                    res = Mass[i];
+                    Mass[0]= Mass[i];
                 }
-
-
 
             }
             Console.WriteLine();
-            Console.WriteLine(res);
+            Console.WriteLine(Mass[0]);
             Console.ReadKey();
 
         }

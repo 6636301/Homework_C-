@@ -12,7 +12,7 @@ namespace _9._2
         {
             Console.Write("Enter number of array: ");
             int l = Convert.ToInt32(Console.ReadLine());
-                    
+
 
             int[] Mass = new int[l];
             Random rand = new Random();
@@ -22,7 +22,7 @@ namespace _9._2
                 Console.WriteLine(Mass[i]);
             }
             Console.WriteLine();
-         
+
             for (int i = 0; i < Mass.Length; i++)
             {
                 if (Mass[i] % 2 != 0)
@@ -30,10 +30,10 @@ namespace _9._2
                     Console.Write(Mass[i] + " ");
                 }
             }
-             
+
             Console.ReadKey();
 
-            //branch_test
+            //Master
         }
     }
 }
